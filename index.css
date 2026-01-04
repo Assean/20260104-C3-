@@ -1,0 +1,28 @@
+#circle{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    grid-template-rows: 4fr 4fr;
+    overflow: hidden;
+    animation: move 2s linear infinite;
+}
+#circle div{
+    width: 200px;
+    height: 200px;
+}
+@keyframes move{
+    0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);  /* deg -> 角度 */
+    /* transform動畫效果 */
+    /* rotate旋轉 */
+  }
+}
+#circle:hover{
+    animation-play-state: paused;
+    box-shadow: 3px 3px 3px gray;
+}
