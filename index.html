@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>form</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="circle">
-        <div style="background-color: red;"></div>
-        <div style="background-color: orange;"></div>
-        <div style="background-color: yellow;"></div>
-        <div style="background-color: yellowgreen;"></div>
-    </div>
+    <form action="#" class="form">
+        <div class="l1">
+            <label for="">姓名</label>
+            <br>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="l2">
+            <label for="">電子郵件</label>
+            <br>
+            <input type="mail" name="mail" id="mail">
+        </div>
+        <div class="l3">
+            <label for="">訊息</label>
+            <br>
+            <textarea class="tt" type="text" name="text" id="text"></textarea>
+        </div>
+        <button type="submit" id="submit">submit</button>
+    </form>
 </body>
 </html>
